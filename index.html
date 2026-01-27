@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Proyecto de Grado | Refugios Animales</title>
+
+<style>
+body{
+  margin:0;
+  font-family:'Segoe UI', sans-serif;
+  background:#f5f5f5;
+  color:#732509;
+}
+
+/* ===== NAVBAR ===== */
+header{
+  background:#ffffff;
+  padding:18px 50px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  box-shadow:0 2px 8px rgba(0,0,0,.1);
+}
+
+header h1{
+  font-size:1.4rem;
+  color:#732509;
+}
+
+nav a{
+  margin-left:25px;
+  text-decoration:none;
+  color:#333;
+  font-weight:500;
+  transition:0.3s;
+}
+
+nav a:hover{
+  color:#F4A261;
+}
+
+/* ===== HERO ===== */
+.hero{
+  background:#F4A261;
+  padding:80px 60px;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  align-items:center;
+  gap:40px;
+}
+
+.hero-text p{
+  font-size:0.9rem;
+  letter-spacing:2px;
+}
+
+.hero-text h2{
+  font-size:3rem;
+  margin:15px 0;
+}
+
+.hero-text p:last-of-type{
+  font-size:1.1rem;
+  margin-bottom:25px;
+}
+
+.hero-text a{
+  display:inline-block;
+  padding:14px 30px;
+  background:#732509;
+  color:#fff;
+  text-decoration:none;
+  border-radius:5px;
+  font-weight:bold;
+  transition:0.3s;
+}
+
+.hero-text a:hover{
+  background:#000;
+}
+
+.hero img{
+  width:100%;
+  border-radius:8px;
+}
+
+/* ===== SECTION ===== */
+section{
+  background:#ffffff;
+  padding:80px 60px;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:40px;
+}
+
+section h3{
+  color:#732509;
+  font-size:2rem;
+  margin-bottom:15px;
+}
+
+section p{
+  line-height:1.7;
+}
+
+/* ===== FOOTER ===== */
+footer{
+  background:#732509;
+  color:#ffffff;
+  text-align:center;
+  padding:25px;
+  font-size:0.9rem;
+}
+
+/* ===== BUZÓN DE COMENTARIOS ===== */
+.buzon{
+  background:#ffffff;
+  padding:60px;
+  margin:60px;
+  border-radius:8px;
+  box-shadow:0 4px 12px rgba(0,0,0,0.1);
+}
+
+.buzon h3{
+  color:#732509;
+  margin-bottom:20px;
+}
+
+.buzon form{
+  display:flex;
+  flex-direction:column;
+  gap:15px;
+}
+
+.buzon input,
+.buzon textarea{
+  padding:12px;
+  border:1px solid #ccc;
+  border-radius:5px;
+  font-family:inherit;
+  font-size:0.95rem;
+}
+
+.buzon textarea{
+  resize:none;
+  height:120px;
+}
+
+.buzon button{
+  background:#F4A261;
+  color:#fff;
+  border:none;
+  padding:12px;
+  border-radius:5px;
+  font-weight:bold;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.buzon button:hover{
+  background:#732509;
+}
+
+/* ===== COMENTARIOS MOSTRADOS ===== */
+.comentarios{
+  margin-top:40px;
+}
+
+.comentario{
+  background:#f9f9f9;
+  padding:15px;
+  border-left:5px solid #F4A261;
+  margin-bottom:15px;
+  border-radius:5px;
+}
+
+.comentario h4{
+  margin:0 0 5px;
+  color:#732509;
+  font-size:0.95rem;
+}
+
+.comentario p{
+  margin:0;
+  font-size:0.9rem;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- ===== ENCABEZADO ===== -->
+<header>
+  <h1>Fundaciones De Refugios y Rescate Animal</h1>
+  <nav>
+    <a href="refugio_almanimal.html">Refugio Almanimal</a>
+    <a href="refugio_bienestar_animal.html">Refugio Bienestar Animal</a>
+    <a href="refugio_el_gran_roque.html">Refugio El Gran Roque</a>
+  </nav>
+</header>
+
+<!-- ===== HERO ===== -->
+<div class="hero">
+  <div class="hero-text">
+    <p>SOBRE EL PROYECTO</p>
+    <h2>¡BIENVENIDOS!</h2>
+    <p>
+      Implementación de una página web informativa sobre tres
+      refugios de rescate animal, orientada a la concientización
+      y el bienestar animal.
+    </p>
+    <a href="#info">Conocer más</a>
+  </div>
+
+  <img src="https://patitasco.com/img/ybc_blog/post/perros-marrones-portada-patitasco.jpg">
+</div>
+
+<!-- ===== CONTENIDO ===== -->
+<section id="info">
+  <div>
+    <h3>Sobre Nosotros</h3>
+    <p>
+     🐾 Sobre Nosotros
+
+Este proyecto de grado tiene como finalidad el diseño e implementación de una página web informativa dedicada a refugios de rescate y bienestar animal, con el objetivo de centralizar información relevante y facilitar el acceso a datos claros, confiables y actualizados para la comunidad.<br><br>
+
+La plataforma funciona como una base de navegación principal, permitiendo a los usuarios desplazarse de manera intuitiva hacia páginas específicas de cada refugio mediante enlaces internos, sin necesidad de abrir nuevas pestañas. De esta forma, se mejora la experiencia del usuario y se optimiza la accesibilidad a la información.<br><br>
+
+El sitio web busca visibilizar la labor de los refugios, destacando su trabajo en el rescate, rehabilitación y adopción responsable de animales en situación de abandono o maltrato. Además, promueve la participación activa de la sociedad a través de secciones informativas sobre donaciones, voluntariado y adopciones responsables.<br><br>
+    </p>
+  </div>
+
+  <div>
+    <p>
+Este proyecto no solo cumple una función informativa, sino también educativa y social, ya que fomenta la conciencia sobre la tenencia responsable, la importancia de la esterilización y el respeto por la vida animal. A través de un diseño claro, moderno y accesible, se pretende generar un impacto positivo tanto en los usuarios como en las organizaciones beneficiadas.<br><br>
+Finalmente, esta propuesta tecnológica demuestra cómo el uso del desarrollo web puede convertirse en una herramienta de apoyo social, fortaleciendo la comunicación entre refugios y la comunidad, y contribuyendo al bienestar animal desde un enfoque digital e innovador.
+  </p>
+  </div>
+</section>
+
+<!-- ===== BUZÓN DE COMENTARIOS ===== -->
+<div class="buzon">
+  <h3>Buzón de Comentarios y Sugerencias</h3>
+
+  <form id="formComentario">
+    <input type="text" id="nombre" placeholder="Nombre (opcional)">
+    <textarea id="mensaje" placeholder="Escribe tu comentario o sugerencia aquí..." required></textarea>
+    <button type="submit">Enviar comentario</button>
+  </form>
+
+  <div class="comentarios" id="listaComentarios"></div>
+</div>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  Proyecto de Grado · Bienestar Animal · 2026
+</footer>
+<script>
+  const form = document.getElementById("formComentario");
+  const lista = document.getElementById("listaComentarios");
+
+  form.addEventListener("submit", function(e){
+    e.preventDefault();
+
+    const nombre = document.getElementById("nombre").value || "Anónimo";
+    const mensaje = document.getElementById("mensaje").value;
+
+    const comentario = document.createElement("div");
+    comentario.classList.add("comentario");
+
+    comentario.innerHTML = `
+      <h4>${nombre}</h4>
+      <p>${mensaje}</p>
+    `;
+
+    lista.prepend(comentario);
+    form.reset();
+  });
+</script>
+
+</body>
+</html>
