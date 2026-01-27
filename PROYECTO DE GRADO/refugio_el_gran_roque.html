@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Refugio El Gran Roque</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #F5F5F5;
+      color: #333;
+    }
+
+    /* ENCABEZADO */
+    header {
+      background:linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),url('https://caracol.com.co/resizer/v2/7VEFHF3Y2NB6DAAYZBSGAG36AU.jpg?auth=ecdaff70209541f1fd30f67b59b44bb69945da9f6876f620b47c75ae28287c15&width=768&quality=70&smart=true');
+      background-size:cover;
+      background-position:center;
+      padding:100px 20px;
+      text-align:center;
+      color:#fff;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 32px;
+    }
+
+    header p {
+      margin-top: 8px;
+    }
+
+    /* CONTENEDOR */
+    .contenedor {
+      max-width: 1100px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    /* INFORMACIÓN */
+    .info {
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      margin-bottom: 40px;
+      animation: aparecer 1s ease;
+    }
+
+    .info h2 {
+      color: #1F1F82;
+      margin-top: 0;
+    }
+
+    /* VIDEO + BOTONES */
+.video-seccion {
+  display: flex;
+  gap: 40px;
+  align-items: stretch; /* clave */
+      background: white;
+      padding: 35px;
+      border-radius: 15px;
+      margin-bottom: 40px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    }
+.video {
+  flex: 2;
+  display: flex;
+  align-items: center;
+}
+
+.botones-lateral {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+    .video-seccion iframe {
+      width: 100%;
+      max-width: 600px;
+      height: 340px;
+      border-radius: 12px;
+    }
+
+    .botones-lateral {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      width: 100%;
+    }
+
+    .boton {
+      text-align: center;
+      padding: 18px;
+      background-color: #1F1F82;
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: bold;
+      border-radius: 12px;
+      transition: transform 0.3s, background-color 0.3s;
+    }
+
+    .boton:hover {
+      background-color: #6565F0;
+      transform: scale(1.05);
+    }
+
+    /* UBICACIÓN */
+    .ubicacion {
+      background: #D1D1FF;
+      padding: 25px;
+      border-radius: 12px;
+    }
+
+    .ubicacion h3 {
+      margin-top: 0;
+      color: #1F1F82;
+    }
+
+    /* ANIMACIÓN */
+    @keyframes aparecer {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 900px) {
+      .video-seccion {
+        flex-direction: column;
+      }
+
+      .video-seccion iframe {
+        max-width: 100%;
+        height: 260px;
+      }
+    }
+
+    /* FOOTER */
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color:#1F1F82;
+      color: white;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Refugio El Gran Roque</h1>
+    <p>Rescatando vidas, creando segundas oportunidades 🐶🐱</p>
+  </header>
+
+  <div class="contenedor">
+
+    <!-- INFORMACIÓN -->
+    <section class="info">
+      <h2>Sobre el refugio</h2>
+      <p>
+La Fundación El Gran Roque es una organización dedicada al rescate, protección y bienestar integral de animales que se encuentran en situación de abandono, maltrato o vulnerabilidad. Su trabajo nace del profundo respeto por la vida y de la convicción de que cada animal merece una existencia digna, segura y llena de cuidado, sin importar las circunstancias que haya vivido en el pasado.<br><br>
+
+Desde su creación, la fundación ha trabajado de manera constante en el rescate de perros y gatos en riesgo, brindándoles atención médica oportuna, alimentación adecuada y un proceso de recuperación tanto física como emocional. El refugio ofrece un espacio temporal y seguro donde los animales pueden sanar, recuperar la confianza y prepararse para una nueva oportunidad junto a una familia responsable.<br><br>
+
+Cada animal rescatado recibe un acompañamiento integral que incluye vacunación, desparasitación, esterilización y evaluación de comportamiento, garantizando que el proceso de adopción se realice de forma consciente, ética y responsable. La Fundación El Gran Roque prioriza que cada adopción represente un compromiso a largo plazo, asegurando siempre el bienestar y la estabilidad del animal.<br><br>
+
+Además de las labores de rescate, la fundación promueve activamente la educación y la concienciación social sobre la tenencia responsable, la prevención del abandono y la importancia de la esterilización como una herramienta clave para reducir la sobrepoblación animal. A través de campañas informativas, actividades comunitarias y presencia en redes sociales, busca generar un impacto positivo y duradero en la sociedad.<br><br>
+
+El funcionamiento de la Fundación El Gran Roque es posible gracias al apoyo de voluntarios, donaciones y personas solidarias que creen en la causa animal. Cada aporte, ya sea económico, material o de tiempo, contribuye directamente a mejorar la calidad de vida de los animales rescatados y a continuar salvando más vidas.<br><br>
+
+En la Fundación El Gran Roque creemos que rescatar va más allá de salvar una vida: significa acompañar, sanar, educar y construir un futuro más humano y compasivo. Nuestro mayor logro es ver a cada rescatado encontrar un hogar definitivo donde sea amado, respetado y considerado parte de una familia.<br><br>
+     </p>
+     <p>
+        Trabajamos gracias al apoyo de voluntarios y donaciones de personas
+        comprometidas con el bienestar animal.
+      </p>
+    </section>
+
+    <!-- VIDEO + BOTONES -->
+    <section class="video-seccion">
+    <!-- VIDEO IZQ -->
+<div class="video">
+  <a href="https://www.youtube.com/watch?si=az_CHKpDBKPEu69I&v=-KQ2zUos8D4&feature=youtu.be" target="_self">
+    <img 
+      src="https://img.youtube.com/vi/-KQ2zUos8D4/hqdefault.jpg" 
+      alt="Video del Refugio Almanimal"
+      style="width:150%; max-width:650px; border-radius:12px; cursor:pointer;">
+  </a>
+</div>
+
+      <!-- BOTONES DERECHA -->
+      <div class="botones-lateral">
+        <a href="catalogo_el_gran_roque.html" class="boton">🐾 Ver Catálogo</a>
+        <a href="donaciones_el_gran_roque.html" class="boton">💖 Donaciones</a>
+        <a href="https://www.instagram.com/fundacionelgranroque?igsh=MWxpYXU2Z2FtNDEwZQ==" class="boton">🤝 Voluntariado</a>
+      </div>
+
+    </section>
+
+    <!-- UBICACIÓN -->
+<section class="ubicacion">
+  <h3>📍 Ubicación</h3>
+  <p>
+    Dirección: Fundación El Gran Roque<br>
+    País: Ecuador
+  </p>
+
+  <!-- MAPA -->
+  <div class="mapa">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3987.198726732942!2d-79.9167446!3d-2.0763559!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d1338b6e832b7%3A0xfeace8b3d3d13999!2sDirecci%C3%B3n%20ProAnimal!5e0!3m2!1ses-419!2sec!4v1769295443072!5m2!1ses-419!2sec"
+      width="100%"
+      height="350"
+      style="border:0;"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </div>
+</section>
+      <p>
+        <b>Visitas:</b><br>
+        Lunes a Domingos – 9:00 a.m. a 5:00 p.m.
+      </p>
+    </section>
+
+  </div>
+
+  <footer>
+    © 2026 Refugio El Gran Roque
+  </footer>
+
+</body>
+</html>
